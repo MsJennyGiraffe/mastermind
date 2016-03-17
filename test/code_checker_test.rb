@@ -16,6 +16,9 @@ class CodeCheckerTest < Minitest::Test
 
   def test_check_colors_returns_the_amount_of_colors_correctly_guessed
     assert_equal 4, @code_checker.check_colors(["R", "G", "B", "Y"], ["R", "G", "B", "Y"])
+    # assert_equal 3, @code_checker.check_colors(["R", "G", "B", "Y"], ["R", "R", "B", "Y"])
+    # assert_equal 2, @code_checker.check_colors(["R", "G", "B", "Y"], ["R", "G", "R", "Y"])
+    # assert_equal 1, @code_checker.check_colors(["R", "G", "B", "Y"], ["R", "G", "B", "R"])
   end
 
 end
